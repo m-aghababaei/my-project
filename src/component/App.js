@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import PersonelCard from './PersonelCard';
-import Grid from '@mui/material/Grid';
+import BMICard from './BMICard';
 
 function App(props) {
   return (
-    <div style={{textAlign:"center"}}>
-      <PersonelCard />
-    </div>
+    <Grid container justify="center" style={{paddingTop:20}}>
+      <Grid item style={{ padding: 5 }}>
+        <PersonelCard />
+      </Grid>
+      <Grid item style={{ padding: 5 }}>
+        <BMICard />
+      </Grid>
+    </Grid>
   );
 }
 
