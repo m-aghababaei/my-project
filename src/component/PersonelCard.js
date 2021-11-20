@@ -75,8 +75,6 @@ function PersonelCard(props) {
             <CardContent >
                 <Grid container >
                     <Grid item style={{ padding: 5 }}>
-
-
                         <MuiPickersUtilsProvider utils={DateFnsUtils} >
                             <DatePicker
                                 // labelFunc={date => (date ? date.format('jYYYY/jMM/jDD') : '')}
@@ -84,9 +82,6 @@ function PersonelCard(props) {
                                 onChange={(date) => setSelectedDate(date)}
                             />
                         </MuiPickersUtilsProvider>
-
-
-
                     </Grid>
                     <Grid item style={{ padding: 5 }}>
                         <FormControl variant="outlined" className={classes.formControl}>
